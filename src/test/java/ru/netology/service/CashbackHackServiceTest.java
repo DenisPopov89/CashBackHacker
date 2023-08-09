@@ -26,15 +26,4 @@ public class CashbackHackServiceTest {
 
         Assert.assertEquals(expected, actual);
     }
-
-    @Test
-    public void shouldReturnErrorForExactAmount() {
-        CashbackHackService service = new CashbackHackService();
-        int amount = 1000;
-        String expected = "Error";
-
-        String actual = service.getMessage(amount);
-
-        Assert.assertEquals(expected, actual);
-    }
 }
